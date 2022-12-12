@@ -70,22 +70,27 @@ ul li{
     font-weight: 500;
     color: rgb(54, 51, 51);
     position: relative;
+    transition: all 0.3s linear;
+
 }
+.header .menus ul li a:hover{
+    color: green;
+ }
 .header .menus ul li a.effect::after{
     position: absolute;
-    top: 2rem;
-    left: 0;
+    top: 2.3rem;
+    left: 50%;
+    right: 0;
     content: '';
-    transition: all 0.5s linear;
     height: 0;
     width: 0;
     background-color:green;
+    transition: all 0.3s linear;
+
 }
-.header .menus ul li a:hover .effect::after {
+.header .menus ul li a.effect:hover::after {
+    left: 0;
     height: 0.2rem;
-    width: 16rem;
+    width: 100%;
 }
-.header .menus ul li a:hover{
-    color:green ;
-    
-}
+
