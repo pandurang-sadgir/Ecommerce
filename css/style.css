@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+ /* Global Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+.max-width{
+    border: 0.1rem red solid;
+    width: 130rem;
+    margin: auto;
+    padding: 0 8rem;
+}
+
+a{
+    
+    text-decoration:none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+/* Header section  */
+
+.header{
+    padding: 2rem 8rem;
+    width: 100%;
+    background: #dddee4;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+}
+.headerContent{
+
+     /* border: green 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header .menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .menus ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .menus ul li{
+ padding: 0 2rem;
+}
+.header .menus ul li a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(54, 51, 51);
+    position: relative;
+}
+.header .menus ul li a.effect::after{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    content: '';
+    transition: all 0.5s linear;
+    height: 0;
+    width: 0;
+    background-color:green;
+}
+.header .menus ul li a:hover .effect::after {
+    height: 0.2rem;
+    width: 16rem;
+}
+.header .menus ul li a:hover{
+    color:green ;
+    
+}
