@@ -1,5 +1,8 @@
- @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html{
+    font-size: 62.5%;
+}
 
  /* Global Styling */
 *{
@@ -7,13 +10,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+    font-size: 1.6rem;
 }
 
 
 
-html{
-    font-size: 62.5%;
-}
 
 .max-width{
     width: 130rem;
@@ -23,6 +24,7 @@ html{
 }
 
 section{
+    padding: 4rem  0rem;
 }
 a{
     
@@ -153,4 +155,73 @@ p{
     font-size: 1.6rem;
     font-weight: 700;
 
+}
+
+
+/* Feature section */
+.feature-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.1rem grey solid; */
+    width: calc(16% - 1rem);
+    object-fit: cover;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+    object-fit: contain;
+    box-shadow: 1rem 1.5rem 4rem rgba(0, 0, 0, 0.06);
+    transition: all 0.5s linear;
+}
+
+.feature-box:hover{
+    transform: scale(1.1);
+    box-shadow: 1rem 2.5rem 4rem rgba(0, 0, 0, 0.1);
+
+}
+.feature-box>h6{
+    margin-top: 1.2rem;
+    padding: 0.8rem;
+    line-height: 2.5rem;
+    background-color: pink;
+    border-radius: 1rem;
+
+    
+}
+
+.feature-box .fe-2{
+    background-color: rgb(157, 103, 211);
+}
+.feature-box .fe-3{
+    background-color:rgb(135, 216, 135);
+}
+.feature-box .fe-4{
+    background-color:rgb(60, 208, 200);
+}
+.feature-box .fe-5{
+    background-color:rgb(255, 125, 113);
+}
+.feature-box .fe-6{
+    background-color:rgb(243, 255, 113);
+}
+.feature-box>img{
+    object-fit: cover;
+}
+
+/* Testing classes */
+.red-border{
+    border: 0.1rem red solid;
+}
+.green-border{
+    border: 0.1rem green solid;
+}
+.blue-border{
+    border: 0.1rem blue solid;
 }
