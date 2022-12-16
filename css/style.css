@@ -255,7 +255,7 @@ p{
     flex-wrap: wrap;
     /* border: 0.1rem green solid; */
 }
-.product .product-content h2,p{
+.product .product-content h2,p,.new-arrival .product-content h2,p{
 text-align: center;
 }
 .product .product-content p{
