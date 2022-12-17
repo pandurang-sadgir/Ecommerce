@@ -376,6 +376,89 @@ display: block;
     color: white;
 }
 
+
+
+
+
+/* call to action banner */
+section .call-to-action-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1rem blueviolet solid; */
+}
+.call-to-action .call-to-action-content .action-banner{
+    /* width: calc(50% - 1rem); */
+    width: 60rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../assets/images/banner/b17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 3rem;
+
+}
+.call-to-action .call-to-action-content .action-banner-2{
+    
+    background-image: url(../assets/images/banner/b10.jpg);
+
+}
+
+
+
+/* .call-to-action .action-banner .action-banner-content{
+    width: calc(90%);
+    height: 100%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.2rem red dotted;
+    color: white;
+} */
+
+.call-to-action .action-banner *,.call-to-action .action-banner-2 *{
+    color: white;
+}
+.call-to-action .action-banner span,.call-to-action .action-banner-2 span{
+    /* line-height: 5rem; */
+    padding: 1.5rem 0;
+
+}
+.call-to-action .action-banner button,.call-to-action .action-banner-2 button{
+    /* margin: 1.2rem  0; */
+    padding: 1.5rem 3rem ;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition:all 0.5s linear ;
+
+}
+
+.call-to-action .call-to-action-content .action-banner:hover button{
+    background-color: rgb(75, 166, 75);
+    border-color: rgb(75, 166, 75);
+
+}
+
+
+
+
+
+
+
+
 /* Testing classes */
 .red-border{
     border: 0.1rem red solid;
