@@ -453,12 +453,49 @@ section .call-to-action-content{
 }
 
 
+/* Text area banner styling */
+
+.text-area-banner .text-area-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-area-banner .text-area-content .text-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    /* margin-bottom: 2rem; */
+    background-image: url(../assets/images/banner/b7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 32%;
 
 
+}
+.text-area-banner .text-area-content .text-banner-2{
+    background-image: url(../assets/images/banner/b4.jpg);
 
+}
+.text-area-banner .text-area-content .text-banner-3{
+    background-image: url(../assets/images/banner/b18.jpg);
 
-
-
+}
+.text-area-banner .text-area-content .text-banner h2{
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.text-area-banner .text-area-content .text-banner h3{
+    color: red;
+    font-size: 2rem;
+    font-weight: 800;
+}
 /* Testing classes */
 .red-border{
     border: 0.1rem red solid;
