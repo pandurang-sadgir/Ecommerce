@@ -387,7 +387,7 @@ section .call-to-action-content{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    
     /* border: 1rem blueviolet solid; */
 }
 .call-to-action .call-to-action-content .action-banner{
@@ -455,12 +455,14 @@ section .call-to-action-content{
 
 /* Text area banner styling */
 
-.text-area-banner .text-area-content{
+section.text-area-banner .text-area-content{
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 }
 .text-area-banner .text-area-content .text-banner{
     display: flex;
@@ -496,6 +498,82 @@ section .call-to-action-content{
     font-size: 2rem;
     font-weight: 800;
 }
+
+/* newsletter section */
+
+section.newsletter{
+    background-color: rgb(4, 4, 50);
+}
+
+.newsletter .newsletter-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.newsletter .newsletter-content .column.left,.newsletter .newsletter-content .column.left h2{
+    color: white;
+    padding: 0 0 1rem 0;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+.newsletter .newsletter-content .column.right{
+    width: 40%;
+
+}
+.newsletter .newsletter-content .column.right form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.newsletter .newsletter-content .column.right form input{
+    height: 4rem;
+    padding: 0 5rem;
+    font-size: 1.7rem;
+    width: 100%;
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
+    outline: none;
+    display: inline-block;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.newsletter .newsletter-content .column.right form button{
+    border-radius: 0.4rem;
+    padding: 0.9rem 5rem ;
+    font-size: 1.8rem;
+    font-weight: 600;    
+    background-color: green;
+    color: #fff;
+    display: inline-block;
+    border: 0.1rem transparent solid;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+
+.newsletter .newsletter-content span{
+    color: orange;
+
+}
+
+
+
+
+
 /* Testing classes */
 .red-border{
     border: 0.1rem red solid;
