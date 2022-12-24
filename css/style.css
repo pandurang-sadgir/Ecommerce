@@ -86,6 +86,7 @@ p{
     justify-content: space-between;
     align-items: center;
 }
+
 .header .menus ul li{
  padding: 0 2rem;
 }
@@ -118,6 +119,13 @@ p{
     width: 100%;
 }
 
+.header .headerContent .menu-button {
+    display:none;
+}
+
+.header .menus #close{
+    display: none;
+}
 
 /* Home section */
 
@@ -339,6 +347,7 @@ display: block;
 }
 
 .banner .banner-content{
+    width: 100%;
     text-align: center;
     /* color: white; */
     color: white;
@@ -597,6 +606,8 @@ footer .footer-content p{
 
 footer .footer-content .column{
     display: flex;
+    flex-wrap: wrap;
+    
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -664,6 +675,7 @@ cursor: pointer;
 
 footer .footer-content .column.column.right .part-1{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -672,6 +684,7 @@ footer .footer-content .column.column.right .part-1{
 
 footer .footer-content .column.column.right .part-2{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -691,6 +704,182 @@ footer .footer-content .column.column.right .part-2 .row img {
     color: rgb(76, 76, 76);
     margin-top: 5rem;
 }
+
+/*  */
+/* Media query  */
+
+@media(min-width:1281px){
+    
+}
+
+@media(min-width:1025px)and (max-width:1280px){
+
+}
+
+/* hambuger menu */
+
+@media(max-width:768px){
+    .max-width { 
+        padding: 0 4rem;
+    }
+    .header .headerContent .menus{
+        width: 30rem;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100rem;
+        background-color: #dddee4;
+        box-shadow:3rem 0rem 10rem 3rem rgba(0, 0, 0, 0.9) ;
+        transition: all 0.5s linear;
+    
+    }
+
+    .header .headerContent .menus.active{
+        right: 0rem;
+
+    }
+    .header .headerContent .menus ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left:4rem;
+        width: 100%;
+        height: 100%;
+        /* margin-top: 8rem; */
+    }
+    
+    .header .headerContent .menus #shopping-cart{
+        display: none;
+    }
+    .header .headerContent .menus ul li{
+        padding:2rem 0rem;
+    }
+    .header .headerContent .menus i{
+        position: absolute;
+        left: 3rem;
+        top: 5rem;
+        font-size: 2rem;
+    }
+
+    .header .menus #close{
+        display: initial;
+    }
+    .header .headerContent .menu-button i{
+        font-size: 2rem;
+        padding: 0  0  0 1rem ;
+    
+    }
+    
+    .header .headerContent .menu-button {
+        display:block;
+    }
+
+    #hero{
+        height: 70vh;
+        background-size: cover;
+        background-origin: border-box;
+        background-position: top 0% left 70%;
+    }
+
+    #hero .hero-content{
+        height: 70vh;
+        /* width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; */
+    }
+
+    h1{
+        font-size: 4rem;
+        line-height: 5.4rem;
+    }
+    h2{
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        color: #222;
+    }
+    h4{
+        font-size: 1.5rem;
+        color: #222;
+        margin: 0 0 1.2rem 0;
+    }
+
+    .banner .banner-content h6 {
+        line-height: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+        margin: 1.3rem 0 1.5rem 0;
+    }
+    
+    
+
+    .feature-content {
+        
+        justify-content: space-around;
+        
+    }
+
+    .feature-box{
+        margin: 1rem 0rem;
+    }
+
+    .banner {
+        
+        height: 20vh;
+        
+    }
+
+    .banner .banner-content h2{
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
+
+    .banner .banner-content button{
+        margin: 0 0 1.5rem 0;
+        padding: 1rem 2rem ;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background-color: white;
+        border-radius: 0.4rem;
+    }
+
+    .banner .banner-content h2 span{
+        font-size: 2.6rem;
+        line-height: 4.5rem;
+        color: red;
+    }
+
+    
+    .call-to-action .call-to-action-content .action-banner{
+        /* width: calc(50% - 1rem); */
+        min-width:100%;
+        
+    
+    }
+
+
+}
+@media(min-width:768px)and (max-width:1024px){
+
+
+}
+@media(min-width:481px)and (max-width:767px){
+
+}
+@media(min-width:320px)and (max-width:480px){
+
+}
+
+@media(max-width:320px){
+
+}
+
+
+
+
 /* Testing classes */
 .red-border{
     border: 0.1rem red solid;
