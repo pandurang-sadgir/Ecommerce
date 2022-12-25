@@ -280,7 +280,7 @@ h6{
     box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.1);
     transition: all 0.5s linear;
     object-fit: cover;
-    margin: 2rem 0;
+    margin: 1rem 1rem;
 
 }
 
@@ -295,7 +295,6 @@ h6{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 0.1rem green solid; */
 }
 .product .product-content h2,p,.new-arrival .product-content h2,p{
 text-align: center;
