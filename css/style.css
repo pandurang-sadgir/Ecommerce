@@ -744,6 +744,10 @@ footer .footer-content .column.column.right .part-2 .row img {
 /* Hambuger menu */
 
 @media(max-width:850px){
+    .banner{
+        height: 30vh;
+        
+    }
 
     .max-width{ 
         padding: 0 4rem;
@@ -807,6 +811,25 @@ footer .footer-content .column.column.right .part-2 .row img {
     .header .header-content .menu-button {
         display:block;
     }
+
+    .banner .banner-content h6{
+        margin-top: 1rem;
+        line-height: 3rem;
+    
+    }
+    
+    
+    .banner .banner-content h2 span{
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+    }
+    .banner .banner-content button{
+        margin: 1rem  0;
+        
+    }
+    
+    
+
 
 }
 
