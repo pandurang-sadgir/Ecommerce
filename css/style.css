@@ -18,8 +18,8 @@ html{
 
 
 .max-width{
-    max-width: 140rem;
-    /* max-width: 100vw; */
+    /* max-width: 140rem; */
+    max-width: 100vw;
     margin: auto;
     height: auto;
     padding: 0 8rem;
@@ -424,7 +424,9 @@ display: block;
 
 
 /* call to action banner */
+
 section .call-to-action-content{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -435,20 +437,22 @@ section .call-to-action-content{
 }
 .call-to-action .call-to-action-content .action-banner{
     width: calc(50% - 1rem);
-    /* width: 60rem; */
-     height: 35rem;
+    background-image: url(../assets/images/banner/b17.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+
+}
+
+.call-to-action .call-to-action-content .action-banner .action-banner-content{
+    padding-left: 3rem;
+    width: 100%;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(../assets/images/banner/b17.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top -30% right 0;
-    padding-left: 3rem;
-    border: 0.1rem red solid;
-    margin-bottom: 1rem;
-
 }
 .call-to-action .call-to-action-content .action-banner-2{
     
@@ -457,18 +461,6 @@ section .call-to-action-content{
 }
 
 
-
-/* .call-to-action .action-banner .action-banner-content{
-    width: calc(90%);
-    height: 100%;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border: 0.2rem red dotted;
-    color: white;
-} */
 
 .call-to-action .action-banner *,.call-to-action .action-banner-2 *{
     color: white;
@@ -500,57 +492,13 @@ section .call-to-action-content{
 
 /* Text area banner styling */
 
-section.text-area-banner .text-area-content{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between ;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-}
-.text-area-banner .text-area-content .text-banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
-    /* margin-bottom: 2rem; */
-    background-image: url(../assets/images/banner/b7.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
-    width: 32%;
-
-
-}
-.text-area-banner .text-area-content .text-banner-2{
-    background-image: url(../assets/images/banner/b4.jpg);
-
-}
-.text-area-banner .text-area-content .text-banner-3{
-    background-image: url(../assets/images/banner/b18.jpg);
-
-}
-.text-area-banner .text-area-content .text-banner h2{
-    color: #fff;
-    font-size: 2.2rem;
-    font-weight: 900;
-}
-.text-area-banner .text-area-content .text-banner h3{
-    color: red;
-    font-size: 2rem;
-    font-weight: 800;
-}
-
 /* newsletter section */
 
-section.newsletter{
+section.news-letter{
     background-color: rgb(4, 4, 50);
 }
 
-.newsletter .newsletter-content{
+.news-letter .news-letter-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -562,7 +510,7 @@ section.newsletter{
 }
 
 
-.newsletter .newsletter-content .column.left,.newsletter .newsletter-content .column.left h2{
+.news-letter .news-letter-content .column.left,.news-letter .news-letter-content .column.left h2{
     color: white;
     padding: 0 0 1rem 0;
     color: #fff;
@@ -570,21 +518,17 @@ section.newsletter{
     font-weight: 900;
 }
 
-.newsletter .newsletter-content .column.right{
-    width: 40%;
-
-}
-.newsletter .newsletter-content .column.right form{
+.news-letter .news-letter-content .column.right form{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
-.newsletter .newsletter-content .column.right form input{
+.news-letter .news-letter-content .column.right form input{
     height: 4rem;
     padding: 0 5rem;
     font-size: 1.7rem;
-    width: 100%;
+    width: 30rem;
     border: 0.1rem solid transparent;
     border-radius: 0.4rem;
     outline: none;
@@ -594,7 +538,7 @@ section.newsletter{
 
 }
 
-.newsletter .newsletter-content .column.right form button{
+.news-letter .news-letter-content .column.right form button{
     border-radius: 0.4rem;
     padding: 0.9rem 5rem ;
     font-size: 1.8rem;
@@ -610,7 +554,7 @@ section.newsletter{
 }
 
 
-.newsletter .newsletter-content span{
+.news-letter .news-letter-content span{
     color: orange;
 }
 
@@ -742,18 +686,33 @@ footer .footer-content .column.column.right .part-2 .row img {
 }
 
 /*  */
-/* Media query  */
+/***********Media query ***********/
 
 @media(max-width:1025px){
-    .call-to-action .call-to-action-content .action-banner{
-        width: calc(100% - 1rem);
-        margin-bottom: ;
+    html{
+        font-size: 57.5%;
     }
+    .call-to-action .call-to-action-content .action-banner{
+        width: 100%;
 }
 
+
+}
 /* Hambuger menu */
 
 @media(max-width:850px){
+    .news-letter .news-letter-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    
     .banner{
         height: 30vh;
         
@@ -837,14 +796,10 @@ footer .footer-content .column.column.right .part-2 .row img {
         margin: 1rem  0;
         
     }
-    
-    
-
-    
-
-
 
 }
+
+
 
 @media(min-width:1281px){
     
@@ -855,9 +810,7 @@ footer .footer-content .column.column.right .part-2 .row img {
 }
 
 @media(min-width:768px)and (max-width:1024px){
-    html{
-        font-size: 58.5%;
-    }
+    
 
     #hero{
         height: 73vh;
@@ -867,9 +820,40 @@ footer .footer-content .column.column.right .part-2 .row img {
         height: 73vh; 
         
     }
-    
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
 
 }
+
+
+@media(max-width:481px){
+    .news-letter .news-letter-content .column.right form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .news-letter .news-letter-content .column.right form input{
+        
+        border-radius: 0.4rem;
+    
+    }
+    
+    .news-letter .news-letter-content .column.right form button{
+        margin: 1rem 0; 
+        border-radius: 0.4rem;
+    
+    }
+}
+
 @media(min-width:481px)and (max-width:768px){
     
     
