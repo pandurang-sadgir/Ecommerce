@@ -297,9 +297,10 @@ h6{
     flex-wrap: wrap;
 }
 .product .product-content h2,p,.new-arrival .product-content h2,p{
-text-align: center;
+    text-align: center;
+
 }
-.product .product-content p{
+.product .product-content p,.new-arrival .product-content p{
     color: rgb(60, 208, 60);
     font-size: 2rem;
 
@@ -429,13 +430,13 @@ section .call-to-action-content{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
     
-    /* border: 1rem blueviolet solid; */
 }
 .call-to-action .call-to-action-content .action-banner{
-    /* width: calc(50% - 1rem); */
-    width: 60rem;
-    height: 50vh;
+    width: calc(50% - 1rem);
+    /* width: 60rem; */
+     height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,8 +444,10 @@ section .call-to-action-content{
     background-image: url(../assets/images/banner/b17.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top -30% right 0;
     padding-left: 3rem;
+    border: 0.1rem red solid;
+    margin-bottom: 1rem;
 
 }
 .call-to-action .call-to-action-content .action-banner-2{
@@ -741,6 +744,13 @@ footer .footer-content .column.column.right .part-2 .row img {
 /*  */
 /* Media query  */
 
+@media(max-width:1025px){
+    .call-to-action .call-to-action-content .action-banner{
+        width: calc(100% - 1rem);
+        margin-bottom: ;
+    }
+}
+
 /* Hambuger menu */
 
 @media(max-width:850px){
@@ -829,6 +839,9 @@ footer .footer-content .column.column.right .part-2 .row img {
     }
     
     
+
+    
+
 
 
 }
