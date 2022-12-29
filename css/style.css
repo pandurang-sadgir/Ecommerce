@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
+@import "./shop.css";
 
  /* Global Styling */
 *{
@@ -82,7 +82,9 @@ h6{
     width: 100%;
     background: #dddee4;
     box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.06);
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     z-index: 9999;
 }
 .header-content{
@@ -105,6 +107,7 @@ h6{
     align-items: center;
 }
 
+
 .header .menus ul li{
  padding: 0 2rem;
 }
@@ -116,9 +119,8 @@ h6{
     transition: all 0.3s linear;
 
 }
-.header .menus ul li a:hover{
-    color: green;
- }
+
+
 .header .menus ul li a.effect::after{
     position: absolute;
     top: 2.3rem;
@@ -131,12 +133,32 @@ h6{
     transition: all 0.3s linear;
 
 }
+.header .menus ul li a.active::after{
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    right: 0;
+    content: '';
+    height: 0.2rem;
+    width: 100%;
+    background-color:green;
+    transition: all 0.3s linear;
 
-.header .menus ul li a.effect:hover::after {
+}
+
+.header .menus ul li a.effect:hover::after{
     left: 0;
     height: 0.2rem;
     width: 100%;
 }
+
+.header .menus ul li a.effect.color{
+    color: green;
+}
+.header .menus ul li a.effect:hover{
+    color:green;
+}
+
 
 .header .header-content .menu-button {
     display:none;
@@ -146,7 +168,9 @@ h6{
     display: none;
 }
 
-
+.color{
+    color:green;
+}
 
 /* Home section */
 
@@ -155,7 +179,8 @@ h6{
     height: 100vh;
     background-image:url(../assets/images/hero4.png);
     background-size: cover;
-    background-position: top -30% right 0;
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
 }
 #hero .hero-content{
     height: 90vh;
