@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import "./shop.css";
+@import "./blog.css";
 
  /* Global Styling */
 *{
@@ -1072,11 +1073,11 @@ footer .footer-content .column.column.right .part-2 .pay{
 
 /* Testing classes */
 .red-border{
-    border: 0.1rem red solid;
+    border: 0.2rem red solid;
 }
 .green-border{
-    border: 0.1rem green solid;
+    border: 0.2rem green solid;
 }
 .blue-border{
-    border: 0.1rem blue solid;
+    border: 0.2rem blue solid;
 }
