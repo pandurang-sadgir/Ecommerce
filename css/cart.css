@@ -1,0 +1,119 @@
+.cart-data .cart-content table{
+    width: 100%;
+    border-collapse:collapse;
+    border-spacing: 0 1rem;
+    white-space: nowrap;
+    table-layout: fixed;
+}
+
+.cart-data .cart-content table thead th{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-top: 0.1rem rgb(171, 166, 166) solid;
+    border-bottom: 0.1rem rgb(171, 166, 166) solid;
+    
+}
+
+.cart-data .cart-content table tbody td{
+    padding: 0.5rem 0;
+
+}
+
+.cart-data .cart-content table tbody tr td img{
+    width: 7rem;
+
+}
+
+.cart-data .cart-content table tbody tr td{
+    margin-bottom:5rem ;
+}
+.cart-data .cart-content table tbody tr td{
+    margin-bottom:5rem ;
+
+    text-align: center;
+}
+.cart-data .cart-content table tbody tr td input{
+    width: 7rem;
+    height: 4rem;
+    text-align: center;
+}
+
+/* add to cart section */
+
+.add-cart .cart-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.add-cart .cart-content .column{
+    width: 50%;
+    
+}
+
+
+
+.add-cart .cart-content .column.left h5,.add-cart .cart-content .column.right h5{
+    font-weight: 500;
+    line-height: 5rem;
+}
+
+.add-cart .cart-content .column.left form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.add-cart .cart-content .column.left form input{
+    padding: 0.9rem 0 0.5rem 2rem;
+    width: 70%;
+}
+.add-cart .cart-content .column.left form button{
+    padding: 1.2rem 4rem;
+    background-color: #088170;
+    color: 
+    #fff;
+    border-radius: 0.5rem;
+    border: none;
+    margin-left: 0.5rem;
+}
+
+
+.add-cart .cart-content .column.right{
+    padding: 2.5rem;
+    border: 0.1rem rgb(176, 169, 169) solid;
+
+}
+
+
+.add-cart .cart-content .column.right table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1rem black solid;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    table-layout: fixed;
+
+}
+
+.add-cart .cart-content .column.right button{
+    padding: 1.2rem 3rem;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #088170;
+    color: #fff;
+
+}
+.add-cart .cart-content .column.right tr td{
+    width: 50%;
+    border: 0.1rem grey solid;
+    padding: 0.5rem 1.5rem;
+
+}
+
+@media screen{
+    body{
+        background-color:#088178;
+    }
+}
